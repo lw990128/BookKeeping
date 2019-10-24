@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.lw.bookkeeping.Fragment.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_recordFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.lw.bookkeeping.Fragment.MainHomeFragment"
+        android:label="home_layout"
+        tools:layout="@layout/main_home_fragment" />
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.lw.bookkeeping.Fragment.CategoryFragment"
+        android:label="record_layout"
+        tools:layout="@layout/category_fragment" >
+        <action
+            android:id="@+id/action_categoryFragment_to_recordFragment"
+            app:destination="@id/recordFragment" />
+        <action
+            android:id="@+id/action_categoryFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recordFragment"
+        android:name="com.lw.bookkeeping.Fragment.RecordFragment"
+        android:label="RecordFragment" >
+        <action
+            android:id="@+id/action_recordFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+</navigation>
