@@ -6,13 +6,13 @@ public class Record extends LitePalSupport {
 
     private int id;
 
-    private ConsumeWay consumeWay;
+    private String consumeWay;
 
     private Category category;
 
     private float sum;
 
-    private PayWay payWay;
+    private String payWay;
 
     private String date;
 
@@ -60,11 +60,19 @@ public class Record extends LitePalSupport {
         this.date = date;
     }
 
-    public ConsumeWay getConsumeWay() {
+    public String getPayWay() {
+        return payWay;
+    }
+
+    public void setPayWay(String payWay) {
+        this.payWay = payWay;
+    }
+
+    public String getConsumeWay() {
         return consumeWay;
     }
 
-    public void setConsumeWay(ConsumeWay consumeWay) {
+    public void setConsumeWay(String consumeWay) {
         this.consumeWay = consumeWay;
     }
 
@@ -74,13 +82,5 @@ public class Record extends LitePalSupport {
 
     public void setCategory(Category category) {
         this.category = category;
-    }
-
-    public PayWay getPayWay() {
-        return payWay;
-    }
-
-    public void setPayWay(PayWay payWay) {
-        this.payWay = payWay;
     }
 }

@@ -6,9 +6,9 @@
     	If you didn't name your database end with .db,
     	LitePal would plus the suffix automatically for you.
     	For example:
-    	<dbname value="BooKeeping" />
+    	<dbname value="demo" />
     -->
-    <dbname value="BooKeeping" />
+    <dbname value="BookKeeping" />
 
     <!--
     	Define the version of your database. Each time you want
@@ -19,7 +19,7 @@
 			For example:
     	<version value="1" />
     -->
-    <version value="3" />
+    <version value="4" />
 
     <!--
     	Define your models in the list with mapping tag, LitePal will
@@ -33,8 +33,6 @@
     -->
     <list>
         <mapping class="com.lw.bookkeeping.Entity.Record"/>
-        <mapping class="com.lw.bookkeeping.Entity.ConsumeWay"/>
-        <mapping class="com.lw.bookkeeping.Entity.PayWay"/>
         <mapping class="com.lw.bookkeeping.Entity.Category"/>
         <mapping class="com.lw.bookkeeping.Entity.Budget"/>
     </list>

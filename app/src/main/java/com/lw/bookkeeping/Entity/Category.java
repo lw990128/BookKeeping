@@ -11,7 +11,7 @@ public class Category extends LitePalSupport {
 
     private String categoryName;
 
-    private List<Category> categoryList = new ArrayList<>();
+    private List<Record> recordList = new ArrayList<>();
 
     public int getId() {
         return id;
@@ -29,11 +29,11 @@ public class Category extends LitePalSupport {
         this.categoryName = categoryName;
     }
 
-    public List<Category> getCategoryList() {
-        return categoryList;
+    public List<Record> getRecordList() {
+        return recordList;
     }
 
-    public void setCategoryList(List<Category> categoryList) {
-        this.categoryList = categoryList;
+    public void setRecordList(List<Record> recordList) {
+        this.recordList = recordList;
     }
 }
