@@ -16,6 +16,11 @@ import androidx.navigation.Navigation;
 import com.lw.bookkeeping.Entity.Record;
 import com.lw.bookkeeping.R;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Objects;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -64,7 +69,21 @@ public class RecordFragment extends Fragment implements View.OnClickListener{
         ButterKnife.bind(this, view);
 
         initEvent();
+
+        if (getArguments() != null) {
+            String consumeWay = RecordFragmentArgs.fromBundle(getArguments()).getConsumeWay();
+            String category = RecordFragmentArgs.fromBundle(getArguments()).getCategory();
+
+            btnConsumeWay.setText(consumeWay);
+            btnCategory.setText(category);
+        }
+
+        Date now = new Date();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+        String time = simpleDateFormat.format(now);
+        btnTime.setText(time);
     }
+
 
     private void initEvent() {
         btnSave.setOnClickListener(this);
@@ -81,12 +100,14 @@ public class RecordFragment extends Fragment implements View.OnClickListener{
         switch(v.getId()){
             case R.id.btn_backToCategory:
                 Navigation.findNavController(btnBackToCategory)
-                        .navigate(R.id.action_recordFragment_to_categoryFragment);
+                        .popBackStack();
                 break;
             case R.id.btn_save:
                 Record record = new Record();
 //                record.set
                 break;
+            case R.id.btn_time:
+
             default:
                 break;
         }

@@ -54,13 +54,7 @@ public class CategoryFragment extends Fragment implements View.OnClickListener {
         super.onViewCreated(view, savedInstanceState);
         ButterKnife.bind(this, view);  // 注册所有组件
 
-        btnBackToMain.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Navigation.findNavController(btnBackToMain)
-                        .navigate(R.id.action_categoryFragment_to_mainFragment);
-            }
-        });
+        initEvent();  // 添加监听
 
         CategorySpendFragment categorySpendFragment = new CategorySpendFragment();
         CategoryIncomeFragment categoryIncomeFragment = new CategoryIncomeFragment();
@@ -88,6 +82,12 @@ public class CategoryFragment extends Fragment implements View.OnClickListener {
         });
     }
 
+    private void initEvent(){
+        btnIncome.setOnClickListener(this);
+        btnSpend.setOnClickListener(this);
+        btnBackToMain.setOnClickListener(this);
+    }
+
     @Override
     public void onClick(View v) {
         switch(v.getId()){
@@ -97,9 +97,11 @@ public class CategoryFragment extends Fragment implements View.OnClickListener {
             case R.id.btn_income:
                 cViewPager.setCurrentItem(1);
                 break;
+            case R.id.btn_backToMain:
+                Navigation.findNavController(btnBackToMain)
+                        .popBackStack();
         }
     }
-
 
     private class MyPagerAdapter extends FragmentPagerAdapter {
         MyPagerAdapter(FragmentManager fm) {

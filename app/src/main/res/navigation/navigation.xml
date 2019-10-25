@@ -8,7 +8,8 @@
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.lw.bookkeeping.Fragment.MainFragment"
-        android:label="MainFragment" >
+        android:label="MainFragment"
+        >
         <action
             android:id="@+id/action_mainFragment_to_recordFragment"
             app:destination="@id/categoryFragment" />
@@ -22,7 +23,8 @@
         android:id="@+id/categoryFragment"
         android:name="com.lw.bookkeeping.Fragment.CategoryFragment"
         android:label="record_layout"
-        tools:layout="@layout/category_fragment" >
+        tools:layout="@layout/category_fragment"
+        app:defaultNavHost="true">
         <action
             android:id="@+id/action_categoryFragment_to_recordFragment"
             app:destination="@id/recordFragment" />
@@ -33,9 +35,19 @@
     <fragment
         android:id="@+id/recordFragment"
         android:name="com.lw.bookkeeping.Fragment.RecordFragment"
-        android:label="RecordFragment" >
+        android:label="RecordFragment"
+        app:defaultNavHost="true"
+        >
         <action
             android:id="@+id/action_recordFragment_to_categoryFragment"
             app:destination="@id/categoryFragment" />
+        <argument
+            android:name="consumeWay"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="category"
+            app:argType="string"
+            app:nullable="true" />
     </fragment>
 </navigation>

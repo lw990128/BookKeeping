@@ -33,6 +33,8 @@ public class CategoryIncomeFragment extends Fragment implements View.OnClickList
     @BindView(R.id.btn_otherIncome)
     Button btnOtherIncome;
 
+    private String category;
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,25 +66,35 @@ public class CategoryIncomeFragment extends Fragment implements View.OnClickList
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.btn_salary:
+                category = "工资";
                 btnNavigation(btnSalary);
                 break;
             case R.id.btn_partTimeJob:
+                category = "兼职";
                 btnNavigation(btnPartTimeJob);
                 break;
             case R.id.btn_redPacket:
+                category = "红包";
                 btnNavigation(btnRedPacker);
                 break;
             case R.id.btn_moneyManagement:
+                category = "理财";
                 btnNavigation(btnMoneyManagement);
                 break;
             case R.id.btn_otherIncome:
+                category = "其他";
                 btnNavigation(btnOtherIncome);
                 break;
         }
     }
 
     private void btnNavigation(Button button){
+        String consumeWay = "收入";
+
+        CategoryFragmentDirections.ActionCategoryFragmentToRecordFragment action =
+                CategoryFragmentDirections.actionCategoryFragmentToRecordFragment(consumeWay, category);
+
         Navigation.findNavController(button)
-                .navigate(R.id.action_categoryFragment_to_recordFragment);
+                .navigate(action);
     }
 }

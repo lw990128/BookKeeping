@@ -57,7 +57,6 @@ public class TabView extends FrameLayout {
                     mTitle = a.getString(attr);
                     break;
             }
-
         }
         a.recycle();
     }
@@ -172,5 +171,4 @@ public class TabView extends FrameLayout {
 
         return Math.round(a) << 24 | Math.round(r) << 16 | Math.round(g) << 8 | Math.round(b);
     }
-
 }

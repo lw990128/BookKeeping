@@ -72,6 +72,8 @@ public class CategorySpendFragment extends Fragment implements View.OnClickListe
     @BindView(R.id.btn_otherspend)
     Button btnOtherspend;
 
+    private String category;
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -116,64 +118,86 @@ public class CategorySpendFragment extends Fragment implements View.OnClickListe
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.btn_cater:
+                category = "餐饮";
                 btnNavigation(btnCater);
                 break;
             case R.id.btn_shop:
+                category = "购物";
                 btnNavigation(btnShop);
                 break;
             case R.id.btn_daily:
+                category = "日用";
                 btnNavigation(btnDaily);
                 break;
             case R.id.btn_transport:
+                category = "交通";
                 btnNavigation(btnTransport);
                 break;
             case R.id.btn_entertainment:
+                category = "娱乐";
                 btnNavigation(btnEntertainment);
                 break;
             case R.id.btn_vegetable:
+                category = "蔬菜";
                 btnNavigation(btnVegetable);
                 break;
             case R.id.btn_snacks:
+                category = "零食";
                 btnNavigation(btnSnacks);
                 break;
             case R.id.btn_fruit:
+                category = "水果";
                 btnNavigation(btnFruit);
                 break;
             case R.id.btn_communication:
+                category = "通讯";
                 btnNavigation(btnCommunication);
                 break;
             case R.id.btn_costume:
+                category = "服饰";
                 btnNavigation(btnCostume);
                 break;
             case R.id.btn_medical:
+                category = "医疗";
                 btnNavigation(btnMedical);
                 break;
             case R.id.btn_digital:
+                category = "数码";
                 btnNavigation(btnDigital);
                 break;
             case R.id.btn_housing:
+                category = "住房";
                 btnNavigation(btnHousing);
                 break;
             case R.id.btn_sports:
+                category = "运动";
                 btnNavigation(btnSports);
                 break;
             case R.id.btn_facial:
+                category = "美容";
                 btnNavigation(btnFacial);
                 break;
             case R.id.btn_study:
+                category = "学习";
                 btnNavigation(btnStudy);
                 break;
             case R.id.btn_domestic:
+                category = "居家";
                 btnNavigation(btnDomestic);
                 break;
             case R.id.btn_otherspend:
+                category = "其他";
                 btnNavigation(btnOtherspend);
                 break;
         }
     }
 
     private void btnNavigation(Button button){
+        String consumeWay = "支出";
+        CategoryFragmentDirections.ActionCategoryFragmentToRecordFragment action =
+                CategoryFragmentDirections.actionCategoryFragmentToRecordFragment(consumeWay, category);
+
         Navigation.findNavController(button)
-                .navigate(R.id.action_categoryFragment_to_recordFragment);
+                .navigate(action);
     }
 }
