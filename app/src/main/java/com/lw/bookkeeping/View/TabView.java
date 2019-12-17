@@ -38,22 +38,18 @@ public class TabView extends FrameLayout {
             switch (attr) {
 
                 case R.styleable.TabView_tabColor:
-                    // 获取标题和轮廓最终的着色
                     mTargetColor = a.getColor(attr, DEFAULT_TAB_TARGET_COLOR);
                     break;
 
                 case R.styleable.TabView_tabImage:
-                    // 获取轮廓图
                     mNormalDrawable = a.getDrawable(attr);
                     break;
 
                 case R.styleable.TabView_tabSelectedImage:
-                    // 获取选中图
                     mSelectedDrawable = a.getDrawable(attr);
                     break;
 
                 case R.styleable.TabView_tabTitle:
-                    // 获取标题
                     mTitle = a.getString(attr);
                     break;
             }

@@ -36,6 +36,7 @@ public class CategoryFragment extends Fragment implements View.OnClickListener {
     @BindView(R.id.btn_backToMain)
     Button btnBackToMain;
 
+    // CategoryFragment 包含了两个子 Fragment
     private List<Fragment> fragmentList = new ArrayList<>();
 
     @Override

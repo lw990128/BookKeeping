@@ -2,11 +2,12 @@ package com.lw.bookkeeping.Entity;
 
 import org.litepal.crud.LitePalSupport;
 
+// 设置预算
 public class Budget extends LitePalSupport {
 
     private int id;
 
-    private long budget;
+    private String budget;
 
     public int getId() {
         return id;
@@ -16,11 +17,11 @@ public class Budget extends LitePalSupport {
         this.id = id;
     }
 
-    public long getBudget() {
+    public String getBudget() {
         return budget;
     }
 
-    public void setBudget(long budget) {
+    public void setBudget(String budget) {
         this.budget = budget;
     }
 }

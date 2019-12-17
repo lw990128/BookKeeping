@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/tv_setBudget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:category="设置预算"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:category="¥"
+            android:textSize="25sp"
+            android:layout_marginStart="20dp"/>
+
+        <EditText
+            android:id="@+id/et_budget"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="输入本月预算"
+            android:maxLength="10"
+            android:textSize="25sp"
+            android:inputType="number|numberDecimal"
+            android:layout_marginStart="5dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

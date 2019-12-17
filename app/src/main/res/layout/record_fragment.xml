@@ -101,33 +101,35 @@
         app:layout_constraintVertical_bias="0.002" />
 
     <TextView
-        android:id="@+id/text_sum"
+        android:id="@+id/tv_RMB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0.00"
+        android:text="¥"
         android:textColor="#000000"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintHorizontal_bias="0.124"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.146" />
+        app:layout_constraintVertical_bias="0.141" />
 
-    <Button
-        android:id="@+id/btn_takePicture"
+    <TextView
+        android:id="@+id/tv_sum"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:text="拍照"
-        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="start"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintDimensionRatio="1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.951"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="@+id/line0"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.126"
-        app:layout_constraintWidth_percent="0.2" />
+        app:layout_constraintVertical_bias="0.141"
+        app:layout_constraintWidth_percent="0.5" />
 
     <TextView
         android:id="@+id/text_recordCategory"
@@ -202,7 +204,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:text="交通"
+        android:text="餐饮"
         android:textSize="20sp"
         android:textAlignment="textStart"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -217,7 +219,7 @@
         android:id="@+id/image_right"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:src="@mipmap/right"
+        android:src="@drawable/right"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -240,14 +242,14 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/line0"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.383"
-        app:layout_constraintWidth_percent="0.15" />
+        app:layout_constraintVertical_bias="0.38"
+        app:layout_constraintWidth_percent="0.2" />
 
     <Button
         android:id="@+id/btn_backToCategory"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@mipmap/back"
+        android:background="@drawable/back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -270,7 +272,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
-        android:text="2019-10-28日 22:00"
+        android:text="2019-10-28日 22:00:11"
         android:textSize="20dp"
         android:textAlignment="textStart"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -278,7 +280,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/line0"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.481"
+        app:layout_constraintVertical_bias="0.485"
         app:layout_constraintWidth_percent="0.6" />
 
     <EditText
@@ -293,7 +295,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/line0"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.59"
+        app:layout_constraintVertical_bias="0.595"
         app:layout_constraintWidth_percent="0.6" />
 
     <Button
@@ -310,24 +312,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.027" />
 
-
-    <!--    <androidx.drawerlayout.widget.DrawerLayout-->
-<!--        android:id="@+id/calculator"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="0dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHeight_percent="0.4"-->
-<!--        app:layout_constraintHorizontal_bias="0.0"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="1.0" >-->
-
-<!--        <Button-->
-<!--            android:text="hello"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"/>-->
-<!--        -->
-<!--    </androidx.drawerlayout.widget.DrawerLayout>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

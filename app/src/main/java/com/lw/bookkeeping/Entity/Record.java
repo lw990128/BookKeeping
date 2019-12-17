@@ -2,23 +2,24 @@ package com.lw.bookkeeping.Entity;
 
 import org.litepal.crud.LitePalSupport;
 
+// LitePal 数据库 Record
 public class Record extends LitePalSupport {
-
+    // id
     private int id;
-
+    // 消费方式
     private String consumeWay;
-
-    private Category category;
-
-    private float sum;
-
+    // 消费类型
+    private String category;
+    // 消费金额
+    private String sum;
+    // 支付方式
     private String payWay;
-
+    // 消费事件
     private String date;
-
+    // 备注
     private String remark;
-
-    private String photoPath;
+    // 图标id
+    private int iconId;
 
     public int getId() {
         return id;
@@ -28,11 +29,11 @@ public class Record extends LitePalSupport {
         this.id = id;
     }
 
-    public float getSum() {
+    public String getSum() {
         return sum;
     }
 
-    public void setSum(float sum) {
+    public void setSum(String sum) {
         this.sum = sum;
     }
 
@@ -42,14 +43,6 @@ public class Record extends LitePalSupport {
 
     public void setRemark(String remark) {
         this.remark = remark;
-    }
-
-    public String getPhotoPath() {
-        return photoPath;
-    }
-
-    public void setPhotoPath(String photoPath) {
-        this.photoPath = photoPath;
     }
 
     public String getDate() {
@@ -76,11 +69,19 @@ public class Record extends LitePalSupport {
         this.consumeWay = consumeWay;
     }
 
-    public Category getCategory() {
+    public String getCategory() {
         return category;
     }
 
-    public void setCategory(Category category) {
+    public void setCategory(String category) {
         this.category = category;
+    }
+
+    public int getIconId() {
+        return iconId;
+    }
+
+    public void setIconId(int iconId) {
+        this.iconId = iconId;
     }
 }

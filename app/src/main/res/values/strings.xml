@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">BookKeeping</string>
+    <string name="app_name">随手记</string>
+    <!-- 点击变换颜色 -->
+    <drawable name="color1">#78807A</drawable>
 </resources>

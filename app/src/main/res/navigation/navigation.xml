@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_mainFragment_to_recordFragment"
             app:destination="@id/categoryFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_recyclerViewFragment"
+            app:destination="@id/recyclerViewFragment" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
@@ -26,11 +29,11 @@
         tools:layout="@layout/category_fragment"
         app:defaultNavHost="true">
         <action
-            android:id="@+id/action_categoryFragment_to_recordFragment"
-            app:destination="@id/recordFragment" />
-        <action
             android:id="@+id/action_categoryFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_categoryFragment_to_recordFragment"
+            app:destination="@id/recordFragment" />
     </fragment>
     <fragment
         android:id="@+id/recordFragment"
@@ -49,5 +52,20 @@
             android:name="category"
             app:argType="string"
             app:nullable="true" />
+        <action
+            android:id="@+id/action_recordFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recyclerViewFragment"
+        android:name="com.lw.bookkeeping.Fragment.RecyclerViewFragment"
+        android:label="recyclerview_fragment"
+        tools:layout="@layout/recyclerview_fragment" >
+        <argument
+            android:name="position"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_recyclerViewFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
 </navigation>

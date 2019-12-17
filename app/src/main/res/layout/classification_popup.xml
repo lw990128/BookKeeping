@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_all1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/all"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部"
+            android:textSize="15sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收入"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cater1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cater"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            />
+        <Button
+            android:id="@+id/btn_shop1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/shop"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            />
+        <Button
+            android:id="@+id/btn_daily1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/daily"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            />
+        <Button
+            android:id="@+id/btn_transport1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/transport"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            />
+        <Button
+            android:id="@+id/btn_vegetable1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/vegetable"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_cater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="餐饮"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            />
+        <TextView
+            android:id="@+id/tv_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购物"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp"
+            />
+        <TextView
+            android:id="@+id/tv_daily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="日用"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp"
+            />
+        <TextView
+            android:id="@+id/tv_transport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交通"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp"
+            />
+        <TextView
+            android:id="@+id/tv_vegetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蔬菜"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_fruit1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/fruit"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+             />
+        <Button
+            android:id="@+id/btn_snacks1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/snacks"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp" />
+        <Button
+            android:id="@+id/btn_sports1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/sports"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp" />
+        <Button
+            android:id="@+id/btn_entertainment1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/entertainment"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"/>
+        <Button
+            android:id="@+id/btn_costume1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/costume"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_fruit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="水果"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+             />
+        <TextView
+            android:id="@+id/tv_snacks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="零食"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp"
+            />
+        <TextView
+            android:id="@+id/tv_sports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运动"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp" />
+        <TextView
+            android:id="@+id/tv_entertainment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="娱乐"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp" />
+        <TextView
+            android:id="@+id/tv_costume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服饰"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_facial1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/facial"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp" />
+        <Button
+            android:id="@+id/btn_housing1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/housing"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            />
+        <Button
+            android:id="@+id/btn_study1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/study"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp" />
+        <Button
+            android:id="@+id/btn_medical1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/medical"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp" />
+        <Button
+            android:id="@+id/btn_domestic1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/domestic"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_facial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="美容"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp" />
+
+        <TextView
+            android:id="@+id/tv_housing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="住房"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp" />
+        <TextView
+            android:id="@+id/tv_study"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学习"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp"/>
+        <TextView
+            android:id="@+id/tv_medical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="医疗"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp"/>
+        <TextView
+            android:id="@+id/tv_domestic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="居家"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_digital1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/digital"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp" />
+        <Button
+            android:id="@+id/btn_communication1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/communication"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp" />
+        <Button
+            android:id="@+id/btn_otherSpend1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/otherspend"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_digital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数码"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp" />
+        <TextView
+            android:id="@+id/tv_communication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通讯"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp"
+            />
+        <TextView
+            android:id="@+id/tv_otherspend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="其他"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_spend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支出"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_salary1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/salary"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            />
+        <Button
+            android:id="@+id/btn_partTimeJob1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/parttime"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            />
+        <Button
+            android:id="@+id/btn_redPacket1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/redpacket"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+             />
+        <Button
+            android:id="@+id/btn_moneyManagement1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/moneymanagement"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+             />
+        <Button
+            android:id="@+id/btn_otherIncome1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/otherincome"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工资"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+             />
+        <TextView
+            android:id="@+id/tv_partimejob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="兼职"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp"
+            />
+        <TextView
+            android:id="@+id/tv_redpacket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="红包"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp"
+            />
+        <TextView
+            android:id="@+id/tv_moneymanagment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="理财"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp"
+            />
+        <TextView
+            android:id="@+id/tv_otherincome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="其他"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

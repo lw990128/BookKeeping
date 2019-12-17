@@ -71,7 +71,7 @@ public class MainFragment extends Fragment {
 
         ImmersionBar.with(this)
                 .statusBarDarkFont(true, 0.2f)
-                .keyboardEnable(true)  //解决软键盘与底部输入框冲突问题
+                .keyboardEnable(false)  //解决软键盘与底部输入框冲突问题
                 .init();
 
         mTabViews.add(mTabHome);
@@ -89,6 +89,9 @@ public class MainFragment extends Fragment {
         fragmentList.add(mainDetailFragment);
         fragmentList.add(mainChartFragment);
         fragmentList.add(mainMineFragment);
+
+        FragmentManager fragmentManager = getChildFragmentManager();
+        fragmentManager.popBackStack(RecordFragment.class.getName(), FragmentManager.POP_BACK_STACK_INCLUSIVE);
 
         mViewPager.setOffscreenPageLimit(mTabTitles.length - 1);
         mViewPager.setAdapter(new MyPagerAdapter(getChildFragmentManager()));

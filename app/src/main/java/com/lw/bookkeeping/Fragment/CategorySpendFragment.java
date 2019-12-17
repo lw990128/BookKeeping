@@ -70,7 +70,7 @@ public class CategorySpendFragment extends Fragment implements View.OnClickListe
     Button btnDigital;
 
     @BindView(R.id.btn_otherspend)
-    Button btnOtherspend;
+    Button btnOtherSpend;
 
     private String category;
 
@@ -111,7 +111,7 @@ public class CategorySpendFragment extends Fragment implements View.OnClickListe
         btnMedical.setOnClickListener(this);
         btnDomestic.setOnClickListener(this);
         btnDigital.setOnClickListener(this);
-        btnOtherspend.setOnClickListener(this);
+        btnOtherSpend.setOnClickListener(this);
     }
 
     @Override
@@ -187,7 +187,7 @@ public class CategorySpendFragment extends Fragment implements View.OnClickListe
                 break;
             case R.id.btn_otherspend:
                 category = "其他";
-                btnNavigation(btnOtherspend);
+                btnNavigation(btnOtherSpend);
                 break;
         }
     }
@@ -199,5 +199,6 @@ public class CategorySpendFragment extends Fragment implements View.OnClickListe
 
         Navigation.findNavController(button)
                 .navigate(action);
+
     }
 }
